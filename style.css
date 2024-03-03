@@ -30,16 +30,72 @@
 /* Variables
    ============================= */
 
+   :root {
+    --color-white: #FFF;
+    --color-purple: #C271FF;
+    --color-black: #071629;
+    --font-family: "Source Sans Pro", sans-serif;
+    --font-size-xxlg: 120px;
+    --font-size-lg: 46px;
+    --font-size-title: 32px;
+    --font-size-text: 16px;
+    --font-size-text-sm: 14px;
+    --font-size-text-xsm: 12px;
+    --font-size-text-m: 18px;
+    --font-size-text-lg: 22px;
+    --button-hover-opacity: 0.9;
+    --font-weight-bold: 900;
+    --font-weight-reg: 700;
+    --font-weight-lreg: 600;
+    --font-weight-light: 400;
+    --font-weight-xlight: 300;
+    --line-height-norm: normal;
+    --line-height-wide: 27px;
+    --box-shadow-button: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    --box-shadow-tutorial: 0px 2px 4px 0px rgba(7, 22, 41, 0.18);
+    --font-style-norm: normal;
+   }
 
-
-
-/* School Page */
-* {
+/* Base
+   ======================= */
+   *, *:before, *:after {
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+  }
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    color: inherit;
+    color: var(--color-purple);
+    cursor: pointer;
+  }
+  button {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: var(--color-purple);
+    color: var(--color-white);
+    border: 0;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-lreg);
+    font-size: var(--font-size-text-sm);
+    line-height: var(--line-height-norm);
+    box-shadow: var(--box-shadow-button);
+  }
+  button:hover {
+    opacity: var(--button-hover-opacity);
+    cursor: pointer;
+  }
+
+/* School Page */
   body {
     width: 100%;
-    background: #FFF;
+    background: var(--color-white);
     margin: 0px;
   }
   /*Header */
@@ -76,15 +132,13 @@
     flex-shrink: 0;
   }
   #menu a {
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-xsm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
     text-decoration: none;
   }
-  
   /* Main */
   #main-part {
     z-index: 1;
@@ -109,45 +163,30 @@
   }
   
   #get-schooled h1 {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-family: var(--font-family);
+    font-size: var(--font-size-xxlg);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
     margin-top: 250px;
     margin-bottom: 0px;
   }
   
   #get-schooled p {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
     word-spacing: 50px;
   }
   
   #get-schooled button {
     margin-top: 40px;
-    width: 162px;
-    height: 44px;
-    flex-shrink: 0;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
-    background-color: #C271FF;
-    border: #C271FF; 
-    border-radius: 22px;
-    color: #FFF;
-    text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /*margin-left: 643.08px;*/
   }
   
   /* Learn from the pros */
@@ -164,17 +203,17 @@
   }
   #pros h2 {
     text-align: center;
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-xlight);
+    line-height: var(--line-height-norm);
     margin-bottom: 87px;
   }
   
   .purple {
-    color: #C271FF;
+    color: var(--color-purple);
   }
   #pro_list {
     display: flex;
@@ -196,22 +235,22 @@
     border-radius: 50%;
   }
   .pro h3 {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 27px; /* 150% */
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-m);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-wide);
     width: 150px;
   }
   .pro p {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--font-weight-light);
     line-height: 24px; /* 150% */
   }
   /* Testimonials */
@@ -222,7 +261,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    background-color: #C271FF;
+    background-color: var(--color-purple);
   }
   #testimonial-block {
     width: 943px;
@@ -246,27 +285,27 @@
   #test-quote blockquote {
     margin: 0;
     width: 730px;
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-lg);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-light);
     line-height: 33.6px; /* 152.727% */
   }
   .bold {
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-lg);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-lreg);
     line-height: 33.6px;
   }
   .italic {
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 22px;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-lg);
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--font-weight-light);
     line-height: 33.6px; /* 152.727% */
   }
   /* Video tutorials */
@@ -287,22 +326,22 @@
     align-items: center;
   }
   #tutorials h1 {
-    color: #071629;
+    color: var(--color-black);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-xlight);
+    line-height: var(--line-height-norm);
     margin-top: 7px;
   }
   #tutorials .purple {
-    color: #C271FF;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    color: var(--color-purple);
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
   }
   #group-tutorial {
     display: flex;
@@ -315,8 +354,8 @@
     flex-shrink: 0;
     flex-direction: column;
     border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(7, 22, 41, 0.18);
+    background: var(--color-white);
+    box-shadow: var(--box-shadow-tutorial);
     z-index: 1;
   }
   #video1 {
@@ -397,22 +436,22 @@
     flex-shrink: 0; 
   }*/
   .tutorial h2 {
-    color: #071629;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
     margin-top: 0px;
     padding: 10px;
     margin-bottom: 0px;
   }
   .tutorial p {
     color: rgba(7, 22, 41, 0.50);
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-sm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-light);
     line-height: 24px; /* 171.429% */
     padding-left: 10px;
     margin-top: 0px;
@@ -438,12 +477,12 @@
     border-radius: 50%;
   }
   .rating h3 {
-    color: #C271FF;
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27px; /* 192.857% */
+    color: var(--color-purple);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-sm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-lreg);
+    line-height: var(--line-height-wide); /* 192.857% */
   }
   .stars {
     display: flex;
@@ -452,13 +491,13 @@
     align-items: center;
   }
   .stars p {
-    color: #C271FF;
+    color: var(--color-purple);
     text-align: right;
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 27px; /* 192.857% */
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-sm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-lreg);
+    line-height: var(--line-height-wide); /* 192.857% */
   }
   .star-group {
     width: 107px;
@@ -469,7 +508,7 @@
   #membership {
     width: 100%;
     height: 502px;
-    background-color: #071629;
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -477,21 +516,21 @@
   }
   #membership h1 {
     margin-top: 70px;
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+    font-style: var(--font-style-norm);
     font-weight: 300;
-    line-height: normal;
+    line-height: var(--line-height-norm);
   }
   #membership .purple {
-    color: #C271FF;
+    color: var(--color-purple);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
   }
   #membership div {
     display: flex;
@@ -510,40 +549,26 @@
     flex-shrink: 0;
   }
   .smile h2 {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-m);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-lreg);
     line-height: 26px; /* 144.444% */
     width: 256px;
   }
   .smile p {
-    color: #FFF;
+    color: var(--color-white);
     text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 185.714% */
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-sm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-wide); /* 185.714% */
     width: 212px;
   }
   #membership button {
-    width: 162px;
-    height: 44px;
-    flex-shrink: 0;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
-    background-color: #C271FF;
-    border: #C271FF;
-    border-radius: 22px;
-    color: #FFF;
-    text-align: center;
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     margin-bottom: 52px;
   }
   /* FAQ */
@@ -562,13 +587,13 @@
   }
   #FAQ h1 {
     margin-top: 67px;
-    color: #071629;
+    color: var(--color-black);
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: var(--font-family);
     font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-xlight);
+    line-height: var(--line-height-norm);
   }
   .qa_container {
     display: flex;
@@ -590,19 +615,19 @@
     gap: 0px;
   }
   .qa_block h2 {
-    color: #071629;
-    font-family: "Source Sans Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-reg);
+    line-height: var(--line-height-norm);
   }
   .qa_block p {
     color: rgba(7, 22, 41, 0.50);
-    font-family: "Source Sans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-sm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-light);
     line-height: 24px; /* 171.429% */
     width: 350px;
   }
@@ -611,7 +636,7 @@
     width: 100%;
     height: 249px;
     flex-shrink: 0;
-    background-color: #071629;
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -647,12 +672,12 @@
     justify-content: space-between;
   }
   #footer_cont p {
-    color: #FFF;
-    font-family: "Source Sans Pro";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-xsm);
+    font-style: var(--font-style-norm);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-norm);
     opacity: 0.3517;
     text-align: center;
   }
