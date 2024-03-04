@@ -165,14 +165,14 @@ font-weight: var(--font-weight-light);
   /* Main 
   ==========================================*/
   #main-part {
-    height: 110vh;
+    /*min-height: 110vh;*/
     flex-shrink: 0;
     /*background-image: url(../images/banner.png);*/
    background: url(images/banner_bgr.png) center/cover no-repeat;
    margin: 0;
   }
   #schooling_block {
-    height: 110vh;
+    /*min-height: 110vh;*/
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%)
   }
@@ -181,8 +181,8 @@ font-weight: var(--font-weight-light);
     color: var(--color-white);
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
-    /*margin-top: 250px;
-    margin-bottom: 0px;*/
+    margin-top: 23vh;
+    margin-bottom: 0px;
   }
   
   #get-schooled p {
@@ -193,14 +193,13 @@ font-weight: var(--font-weight-light);
   }
   
   #get-schooled button {
-    /*margin-top: 40px;*/
+    margin-top: 2vh;
   }
   
   /* Learn from the pros */
   #pros {
-    /*margin-top: 250px;
-    width: 100%;
-    height: 237px;
+    margin-top: 20vh;
+    /*height: 237px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -219,22 +218,12 @@ font-weight: var(--font-weight-light);
   }
   #pro_list {
     display: flex;
-    width: 80%;
-    height: 237px;
     flex-shrink: 0;
     justify-content: space-around;
   }
   .pro {
     width: 150px;
     height: 237px;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
-  .pro img {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-    border-radius: 50%;
   }
   .pro h3 {
     color: var(--color-white);
