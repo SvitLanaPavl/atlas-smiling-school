@@ -231,52 +231,23 @@ font-weight: var(--font-weight-light);
     font-size: var(--font-size-text-m);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-wide);
-    width: 150px;
   }
   .pro p {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-text);
     font-style: italic;
     font-weight: var(--font-weight-light);
-    line-height: 24px; /* 150% */
+    line-height: 24px;
   }
   /* Testimonials */
   #testimony {
-    width: 100%;
-    height: 392px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     background-color: var(--color-purple);
-  }
-  #testimonial-block {
-    width: 943px;
-    height: 160px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  #testimonial-block img {
-    width: 160px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 50%;
-  }
-  #test-quote {
-    width: 730px;
-    height: 158px;
-    flex-shrink: 0;
-    padding: 0;
+    height: 33vh;
   }
   #test-quote blockquote {
-    margin: 0;
-    width: 730px;
     color: var(--color-white);
     font-size: var(--font-size-text-lg);
     font-weight: var(--font-weight-light);
-    line-height: 33.6px; /* 152.727% */
   }
   .bold {
     color: var(--color-white);
