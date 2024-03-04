@@ -165,50 +165,40 @@ font-weight: var(--font-weight-light);
   /* Main 
   ==========================================*/
   #main-part {
-    height: 1180px;
+    height: 110vh;
     flex-shrink: 0;
     /*background-image: url(../images/banner.png);*/
    background: url(images/banner_bgr.png) center/cover no-repeat;
    margin: 0;
   }
   #schooling_block {
-    width: 100%;
-    height: 1180px;
+    height: 110vh;
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%)
-  }
-  #get-schooled {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
   #get-schooled h1 {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
-    margin-top: 250px;
-    margin-bottom: 0px;
+    /*margin-top: 250px;
+    margin-bottom: 0px;*/
   }
   
   #get-schooled p {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-text);
-    font-style: normal;
     font-weight: var(--font-weight-reg);
     word-spacing: 50px;
   }
   
   #get-schooled button {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
   }
   
   /* Learn from the pros */
   #pros {
-    margin-top: 250px;
+    /*margin-top: 250px;
     width: 100%;
     height: 237px;
     flex-shrink: 0;
@@ -216,14 +206,12 @@ font-weight: var(--font-weight-light);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+  */
   }
   #pros h2 {
-    text-align: center;
     color: var(--color-white);
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-xlight);
-    margin-bottom: 87px;
   }
   
   .purple {
