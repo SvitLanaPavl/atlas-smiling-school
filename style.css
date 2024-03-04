@@ -165,7 +165,6 @@ font-weight: var(--font-weight-light);
   /* Main 
   ==========================================*/
   #main-part {
-    /*min-height: 110vh;*/
     flex-shrink: 0;
     /*background-image: url(../images/banner.png);*/
    background: url(images/banner_bgr.png) center/cover no-repeat;
@@ -242,7 +241,7 @@ font-weight: var(--font-weight-light);
   /* Testimonials */
   #testimony {
     background-color: var(--color-purple);
-    height: 33vh;
+    min-height: 33vh;
   }
   #test-quote blockquote {
     color: var(--color-white);
@@ -260,7 +259,7 @@ font-weight: var(--font-weight-light);
     font-size: var(--font-size-text-lg);
     font-style: italic;
     font-weight: var(--font-weight-light);
-    line-height: 33.6px; /* 152.727% */
+    line-height: 33.6px;
   }
   /* Video tutorials */
   #tutorial-section {
