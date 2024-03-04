@@ -129,7 +129,7 @@
       transform: translateX(-50%);
       top: calc(50% + 50px);
     }
-    .navbar-nav .nav-item {
+    .navbar-nav li a {
       width: 100%;
       text-align: center;
     }
