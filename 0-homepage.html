@@ -19,8 +19,8 @@
       <a href="#" id="logo" class="d-flex flex-md-row flex-column align-items-center"><img src="images/smile-white.svg" alt="SmileSchool Logo" width="30" height="30"><span class="ms-3" class="text-white" id="logo-smile">SmileSchool</span></a>
       <div class="collapse navbar-collapse justify-content-sm-end justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link me-5" href="courses.html">COURSES</a></li>
-        <li class="nav-item"><a class="nav-link me-5" href="pricing.html">PRICING</a></li>
+        <li class="nav-item"><a class="nav-link me-5" href="courses.html" target="_blank">COURSES</a></li>
+        <li class="nav-item"><a class="nav-link me-5" href="pricing.html" target="_blank">PRICING</a></li>
         <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
     </ul>
       </div>
@@ -38,7 +38,7 @@
       <div class="container-fluid d-flex flex-column justify-content-center mb-5 mt-5" id="pros">
         <h2 class="text-center mb-5 text-white"><span class="text-primary">Learn</span> from the pros</h2>
         <div class="container d-flex mt-5 w-md-75 justify-content-center">
-          <div class="row justify-content-around w-100">
+          <div class="row container-fluid justify-content-around w-100">
           <div class="pro col-lg-3 col-md-4 col-sm-6 col-12 m-4" style="width: 150px; height: 237px;">
             <img class="rounded-circle" src="images/Philip.png" alt="Phillip Massey">
             <h3 class="mt-2 text-center text-white">Phillip Massey</h5>
@@ -86,115 +86,120 @@
     </div>
     </section>
     <!-- Videos -->
-    <section id="tutorial-section" class="container-fluid mt-5 mb-5 d-flex align-items-center">
+    <section class="tutorial-section container-fluid mt-4 mb-5 d-flex align-items-center">
       <div class="carousel slide container-fluid p-0" id="carouselExampleControls" data-bs-ride="carousel">
-      <div class="container carousel-inner" id="tutorials">
-      <h1 class="text-center mb-5">Most <span class="purple">popular</span> tutorials</h1>
-        <div class="w-75 row justify-content-around">
-          <div class="tutorial card rounded-2  col-lg-3">
-            <div class="card-img-top" id="video1" style="background-image: url(images/diagonal.png);">
-              <img src="images/play_btn.svg" class="play_btn"alt="play button">
-            </div>
-            <h2>Diagonal Smile</h2>
-            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-            <div class="rating">
-              <div class="rating-pers">
-              <img src="images/Philip.png" alt="Philip">
-              <h3>Phillip Massey</h3>
-            </div>
-              <div class="stars">
-                <div class="star-group">
-                  <img src="images/rating_1.svg" class="star" alt="rating">
-                  <img src="images/rating_2.svg" class="star" alt="rating">
-                  <img src="images/rating_3.svg" class="star" alt="rating">
-                  <img src="images/rating_4.svg" class="star" alt="rating">
-                  <img src="images/rating_5.svg" class="star" alt="rating">
+        <div id="tutorials">
+        <h1 class="text-center text-black">Most <span class="text-primary">popular</span> tutorials</h1>
+        <div class="container-fluid d-flex justify-content-center pt-4">
+          <div class="row justify-content-around w-75">
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 col-md-6" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/diagonal.png);">
+                <img src="images/play_btn.svg" class="play_btn"alt="play button">
+              </div>
+              <h2 class="ps-3 pt-3 text-black">Diagonal Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
                 </div>
-                <p>8 min</p>
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
+                  </div>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 col-lg-6 d-none d-md-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/sad.png);">
+                <img src="images/play_btn.svg" class="play_btn"alt="play button">
+              </div>
+              <h2 class="ps-3 pt-3 text-black">Sad Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
+                </div>
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
+                  </div>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 d-none d-lg-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/natural.png);">
+                <img src="images/play_btn.svg" class="play_btn"alt="play button">
+              </div>
+              <h2 class="ps-3 pt-3 text-black">Natural Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
+                </div>
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
+                  </div>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 d-none d-lg-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/happy.png);">
+                <img src="images/play_btn.svg" class="play_btn"alt="play button">
+              </div>
+              <h2 class="ps-3 pt-3 text-black">Happy Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
+                </div>
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
+                  </div>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="tutorial card rounded-2 col-lg-3">
-            <div id="video2" style="background-image: url(images/sad.png);">
-              <img src="images/play_btn.svg" class="play_btn"alt="play button">
-            </div>
-            <h2>Sad Smile</h2>
-            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-            <div class="rating">
-              <div class="rating-pers">
-              <img src="images/Philip.png" alt="Phillip">
-              <h3>Phillip Massey</h3>
-              </div>
-              <div class="stars">
-                <div class="star-group">
-                  <img src="images/rating_1.svg" class="star" alt="rating">
-                  <img src="images/rating_2.svg" class="star" alt="rating">
-                  <img src="images/rating_3.svg" class="star" alt="rating">
-                  <img src="images/rating_4.svg" class="star" alt="rating">
-                  <img src="images/rating_5.svg" class="star" alt="rating">
-                </div>
-                <p>8 min</p>
-              </div>
-            </div>
+          <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </div>
-          <div class="tutorial card rounded-2 col-lg-3">
-            <div id="video3" style="background-image: url(images/natural.png);">
-              <img src="images/play_btn.svg" class="play_btn"alt="play button">
-            </div>
-            <h2>Natural Smile</h2>
-            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-            <div class="rating">
-              <div class="rating-pers">
-              <img src="images/Philip.png" alt="Phillip">
-              <h3>Phillip Massey</h3>
-              </div>
-              <div class="stars">
-                <div class="star-group">
-                  <img src="images/rating_1.svg" class="star" alt="rating">
-                  <img src="images/rating_2.svg" class="star" alt="rating">
-                  <img src="images/rating_3.svg" class="star" alt="rating">
-                  <img src="images/rating_4.svg" class="star" alt="rating">
-                  <img src="images/rating_5.svg" class="star" alt="rating">
-                </div>
-                <p>8 min</p>
-              </div>
-            </div>
+          <div class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </div>
-          <div class="tutorial card rounded-2 col-lg-3">
-            <div id="video4" style="background-image: url(images/happy.png);">
-              <img src="images/play_btn.svg" class="play_btn"alt="play button">
-            </div>
-            <h2>Happy Smile</h2>
-            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-            <div class="rating">
-              <div class="rating-pers">
-              <img src="images/Philip.png" alt="Phillip">
-              <h3>Phillip Massey</h3>
-              </div>
-              <div class="stars">
-                <div class="star-group">
-                  <img src="images/rating_1.svg" class="star" alt="rating">
-                  <img src="images/rating_2.svg" class="star" alt="rating">
-                  <img src="images/rating_3.svg" class="star" alt="rating">
-                  <img src="images/rating_4.svg" class="star" alt="rating">
-                  <img src="images/rating_5.svg" class="star" alt="rating">
-                </div>
-                <p>8 min</p>
-              </div>
-            </div>
         </div>
-        </div>
       </div>
-      <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </div>
-      <div class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </div>
-    </div>
-    </section>
+      </section>
+    
     <!-- Membership -->
     <section class="container-fluid bg-secondary d-flex flex-column justify-content-between align-items-center pt-5, pb-5" id="membership">
       <h1 class="mt-5 text-white"><span class="text-primary">Free</span> membership</h1>
@@ -223,200 +228,118 @@
       <button class="mt-5">REGISTER FOR FREE</button>
     </section>
     <!-- Latest videos -->
-    <section id="tutorial-section">
+    <section class="tutorial-section container-fluid mt-4 mb-5 d-flex align-items-center">
+      <div class="carousel slide container-fluid p-0" id="carouselExampleControls" data-bs-ride="carousel">
         <div id="tutorials">
-        <h1 class="text-center">Most <span class="purple">popular</span> tutorials</h1>
-        <div class="container-fluid d-flex justify-content-center">
-          <div class="row">
-            <div class="card p-0 pb-2 shadow border-0" style="width: 255px;">
+        <h1 class="text-center text-black"><span class="text-primary">Latest</span> videos</h1>
+        <div class="container-fluid d-flex justify-content-center pt-4">
+          <div class="row justify-content-around w-75">
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 col-md-6" style="width: 255px;">
               <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/inverted.png);">
                 <img src="images/play_btn.svg" class="play_btn"alt="play button">
               </div>
-              <h2 class="ps-3 pt-3">Diagonal Smile</h2>
-              <p class="ps-3">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <h2 class="ps-3 pt-3 text-black">Diagonal Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
               <div class="d-flex flex-column wrap ps-3 pb-3">
                 <div class="rating-pers d-flex align-items-center justify-content-start">
                   <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
-                  <h3 class="ms-3">Phillip Massey</h3>
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
                 </div>
                 <div class="stars d-flex align-items-center justify-content-start">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
                   </div>
-                  <p class="text-center mb-0 pt-2 align-middle ms-5">8 min</p>
-                </div>
-              </div>
-            </div> 
-            <div class="tutorial">
-              <div id="video2" style="background-image: url(images/sad.png);">
-                <img src="images/play_btn.svg" class="play_btn"alt="play button">
-              </div>
-              <h2>Sad Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
-                </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
-                  </div>
-                  <p>8 min</p>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
                 </div>
               </div>
             </div>
-            <div class="tutorial">
-              <div id="video3" style="background-image: url(images/natural.png);">
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 col-lg-6 d-none d-md-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/sad.png);">
                 <img src="images/play_btn.svg" class="play_btn"alt="play button">
               </div>
-              <h2>Natural Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
+              <h2 class="ps-3 pt-3 text-black">Sad Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
                 </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
                   </div>
-                  <p>8 min</p>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
                 </div>
               </div>
             </div>
-            <div class="tutorial">
-              <div id="video4" style="background-image: url(images/happy.png);">
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 d-none d-lg-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/natural.png);">
                 <img src="images/play_btn.svg" class="play_btn"alt="play button">
               </div>
-              <h2>Happy Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
+              <h2 class="ps-3 pt-3 text-black">Natural Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
                 </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
                   </div>
-                  <p>8 min</p>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0 pb-2 shadow border-0 m-4 col-12 d-none d-lg-block" style="width: 255px;">
+              <div class="d-flex justify-content-center align-items-center rounded-top" style="width: 255px; height: 154px; background-image: url(images/happy.png);">
+                <img src="images/play_btn.svg" class="play_btn"alt="play button">
+              </div>
+              <h2 class="ps-3 pt-3 text-black">Happy Smile</h2>
+              <p class="ps-3 text-dark">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+              <div class="d-flex flex-column wrap ps-3 pb-3">
+                <div class="rating-pers d-flex align-items-center justify-content-start">
+                  <img class="rounded-circle" style="width: 30px; height: 30px;" src="images/Philip.png" alt="Philip">
+                  <h3 class="ms-3 text-primary">Phillip Massey</h3>
+                </div>
+                <div class="stars d-flex align-items-center justify-content-start">
+                  <div class="star-group" style="width: 107px; height: 15px;">
+                    <img src="images/rating_1.svg" alt="rating">
+                    <img src="images/rating_2.svg" alt="rating">
+                    <img src="images/rating_3.svg" alt="rating">
+                    <img src="images/rating_4.svg" alt="rating">
+                    <img src="images/rating_5.svg" alt="rating">
+                  </div>
+                  <p class="text-center mb-0 pt-2 align-middle ms-5 text-primary">8 min</p>
                 </div>
               </div>
             </div>
           </div>
-            
+          <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </div>
-            <!--<div class="tutorial">
-              <div id="video1" style="background-image: url(images/inverted.png);">
-                <img src="images/play_btn.svg" class="play_btn"alt="play button">
-              </div>
-              <h2>Diagonal Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Philip">
-                <h3>Phillip Massey</h3>
-              </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
-                  </div>
-                  <p>8 min</p>
-                </div>
-              </div>
-            </div> 
-            <div class="tutorial">
-              <div id="video2" style="background-image: url(images/sad.png);">
-                <img src="images/play_btn.svg" class="play_btn"alt="play button">
-              </div>
-              <h2>Sad Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
-                </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
-                  </div>
-                  <p>8 min</p>
-                </div>
-              </div>
-            </div>
-            <div class="tutorial">
-              <div id="video3" style="background-image: url(images/natural.png);">
-                <img src="images/play_btn.svg" class="play_btn"alt="play button">
-              </div>
-              <h2>Natural Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
-                </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
-                  </div>
-                  <p>8 min</p>
-                </div>
-              </div>
-            </div>
-            <div class="tutorial">
-              <div id="video4" style="background-image: url(images/happy.png);">
-                <img src="images/play_btn.svg" class="play_btn"alt="play button">
-              </div>
-              <h2>Happy Smile</h2>
-              <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-              <div class="rating">
-                <div class="rating-pers">
-                <img src="images/Philip.png" alt="Phillip">
-                <h3>Phillip Massey</h3>
-                </div>
-                <div class="stars">
-                  <div class="star-group">
-                    <img src="images/rating_1.svg" class="star" alt="rating">
-                    <img src="images/rating_2.svg" class="star" alt="rating">
-                    <img src="images/rating_3.svg" class="star" alt="rating">
-                    <img src="images/rating_4.svg" class="star" alt="rating">
-                    <img src="images/rating_5.svg" class="star" alt="rating">
-                  </div>
-                  <p>8 min</p>
-                </div>
-              </div>
-            </div>
-          </div>-->
+          <div class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </div>
         </div>
+      </div>
       </section>
   </main>
   <!-- Footer -->

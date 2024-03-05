@@ -61,8 +61,11 @@
     .text-primary {
       color: #C271FF !important;
     }
-    .text-dark {
+    .text-black {
       color: #071629 !important;
+    }
+    .text-dark {
+      color: rgba(7, 22, 41, 0.50) !important;
     }
     .bg-primary {
       background-color: #C271FF !important;
@@ -221,25 +224,16 @@
     line-height: 34px;
   }
   /* Video tutorials */
-  #tutorial-section {
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 550px;
-    width: 100%;*/
-  }
-  #tutorial-section .carousel-control-prev-icon,
-  #tutorial-section .carousel-control-next-icon {
+  .tutorial-section .carousel-control-prev-icon,
+  .tutorial-section .carousel-control-next-icon {
     filter: invert(1); 
   }
 
   #tutorials h1 {
-    color: var(--color-black);
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-xlight);
   }
   #tutorials .purple {
-    color: var(--color-purple);
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-reg);
   }
@@ -250,28 +244,20 @@
     font-weight: var(--font-weight-reg);
   }
   .card p {
-    color: rgba(7, 22, 41, 0.50);
     font-size: var(--font-size-text-sm);
     font-style: var(--font-style-norm);
     font-weight: var(--font-weight-light);
     line-height: 24px;
   }
   .rating-pers h3 {
-    color: var(--color-purple);
     font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-lreg);
     line-height: var(--line-height-wide);
   }
   .stars p {
-    color: var(--color-purple);
     font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-lreg);
     line-height: var(--line-height-wide); /* 192.857% */
-  }
-  .star-group {
-    width: 107px;
-    height: 15px;
-    flex-shrink: 0;
   }
   /* Free membership */
   #membership h1 {
