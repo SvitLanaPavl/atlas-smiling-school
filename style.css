@@ -68,7 +68,6 @@
     font-family: var(--font-family);
     font-style: var(--font-style-norm);
     line-height: var(--line-height-norm);
-    width: 100%;
     background: var(--color-white);
     margin: 0px;
   }
@@ -165,13 +164,10 @@ font-weight: var(--font-weight-light);
   /* Main 
   ==========================================*/
   #main-part {
-    flex-shrink: 0;
     /*background-image: url(../images/banner.png);*/
    background: url(images/banner_bgr.png) center/cover no-repeat;
-   margin: 0;
   }
   #schooling_block {
-    /*min-height: 110vh;*/
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%)
   }
@@ -180,8 +176,7 @@ font-weight: var(--font-weight-light);
     color: var(--color-white);
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
-    margin-top: 23vh;
-    margin-bottom: 0px;
+    margin-top: 25vh;
   }
   
   #get-schooled p {
@@ -191,21 +186,8 @@ font-weight: var(--font-weight-light);
     word-spacing: 50px;
   }
   
-  #get-schooled button {
-    margin-top: 2vh;
-  }
-  
   /* Learn from the pros */
-  #pros {
-    margin-top: 20vh;
-    /*height: 237px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  */
-  }
+
   #pros h2 {
     color: var(--color-white);
     font-size: var(--font-size-title);
@@ -215,18 +197,12 @@ font-weight: var(--font-weight-light);
   .purple {
     color: var(--color-purple);
   }
-  #pro_list {
-    display: flex;
-    flex-shrink: 0;
-    justify-content: space-around;
-  }
   .pro {
     width: 150px;
     height: 237px;
   }
   .pro h3 {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-text-m);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-wide);
@@ -241,7 +217,6 @@ font-weight: var(--font-weight-light);
   /* Testimonials */
   #testimony {
     background-color: var(--color-purple);
-    min-height: 33vh;
   }
   #test-quote blockquote {
     color: var(--color-white);
@@ -252,14 +227,14 @@ font-weight: var(--font-weight-light);
     color: var(--color-white);
     font-size: var(--font-size-text-lg);
     font-weight: var(--font-weight-lreg);
-    line-height: 33.6px;
+    line-height: 34px;
   }
   .italic {
     color: var(--color-white);
     font-size: var(--font-size-text-lg);
     font-style: italic;
     font-weight: var(--font-weight-light);
-    line-height: 33.6px;
+    line-height: 34px;
   }
   /* Video tutorials */
   #tutorial-section {
