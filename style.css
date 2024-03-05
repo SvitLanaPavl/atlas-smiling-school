@@ -65,10 +65,10 @@
       color: #071629 !important;
     }
     .bg-primary {
-      color: #C271FF !important;
+      background-color: #C271FF !important;
     }
     .bg-secondary {
-      color: #071629 !important;
+      background-color: #071629 !important;
     }
 
 /* Base
@@ -194,10 +194,6 @@
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-xlight);
   }
-  .pro {
-    width: 150px;
-    height: 237px;
-  }
   .pro h3 {
     font-size: var(--font-size-text-m);
     font-weight: var(--font-weight-bold);
@@ -209,11 +205,7 @@
     line-height: 24px;
   }
   /* Testimonials */
-  #testimony {
-    background-color: var(--color-purple);
-  }
   #test-quote blockquote {
-    color: var(--color-white);
     font-size: var(--font-size-text-lg);
     font-weight: var(--font-weight-light);
   }
@@ -224,9 +216,7 @@
     line-height: 34px;
   }
   .italic {
-    color: var(--color-white);
     font-size: var(--font-size-text-lg);
-    font-style: italic;
     font-weight: var(--font-weight-light);
     line-height: 34px;
   }
@@ -284,17 +274,9 @@
     flex-shrink: 0;
   }
   /* Free membership */
-  #membership {
-    background-color: var(--color-black);
-  }
   #membership h1 {
-    color: var(--color-white);
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-xlight);
-  }
-  #membership .purple {
-    color: var(--color-purple);
-    font-weight: var(--font-weight-reg);
   }
 
   .smile {
@@ -320,11 +302,7 @@
   
   /* Footer 
   ======================================*/
-  footer {
-    background-color: var(--color-black);
-  }
   footer p {
-    color: var(--color-white);
     font-size: var(--font-size-text-xsm);
     font-weight: var(--font-weight-light);
   }
