@@ -73,6 +73,24 @@
     .bg-secondary {
       background-color: #071629 !important;
     }
+    .h1 {
+      font-size: 120px !important;
+    }
+    .h2 {
+      font-size: 46px !important;
+    }
+    .h3 {
+      font-size: 32px !important;
+    }
+    .fs-4 {
+
+    }
+    .fs-5 {
+
+    }
+    .fs-1 {
+
+    }
 
 /* Base
    ======================= */
