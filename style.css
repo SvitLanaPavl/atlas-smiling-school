@@ -104,15 +104,13 @@
   ==========================================*/
   
   header {
-    position: absolute;
     z-index: 2;
-    display: flex;
     height: 30px;
     top: 40px;
   }
   #logo {
-    width: 167.016px;
-    height: 29.461px;
+    width: 168px;
+    height: 30px;
     flex-shrink: 0;
   }
   @media (max-width: 767px) {
@@ -164,12 +162,12 @@ font-weight: var(--font-weight-light);
   /* Main 
   ==========================================*/
   #main-part {
-    /*background-image: url(../images/banner.png);*/
    background: url(images/banner_bgr.png) center/cover no-repeat;
+   background-attachment: fixed;
   }
   #schooling_block {
     backdrop-filter: grayscale();
-    background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%)
+    background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%);
   }
   
   #get-schooled h1 {
