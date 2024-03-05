@@ -396,34 +396,25 @@ font-weight: var(--font-weight-light);
   .smile {
     width: 257px;
     height: 153px;
-    flex-shrink: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .smile img {
-    width: 43.666px;
-    height: 35.353px;
+    width: 44px;
+    height: 35px;
     flex-shrink: 0;
   }
   .smile h2 {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-text-m);
     font-weight: var(--font-weight-lreg);
-    line-height: 26px; /* 144.444% */
+    line-height: var(--line-height-wide);
     width: 256px;
   }
   .smile p {
     color: var(--color-white);
-    text-align: center;
     font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-light);
-    line-height: var(--line-height-wide); /* 185.714% */
+    line-height: var(--line-height-wide);
     width: 212px;
-  }
-  #membership button {
-    margin-bottom: 52px;
   }
   
   /* Footer 
