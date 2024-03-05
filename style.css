@@ -400,7 +400,6 @@ font-weight: var(--font-weight-light);
   .smile img {
     width: 44px;
     height: 35px;
-    flex-shrink: 0;
   }
   .smile h2 {
     color: var(--color-white);
