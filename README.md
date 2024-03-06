@@ -29,21 +29,8 @@ atlas-headphones/
 
 ## End product Desktop/Tablet/Mobile versions 🏆
 
-<div align="center">
-<img src="images/01_SMILESCHOOL_LANDING_desktop@2x.png" alt="end product landing desktop">
-<img src="images/01_SMILESCHOOL_LANDING_mobile@2x.png" alt="end product landing tablet">
-<img src="images/01_SMILESCHOOL_LANDING_tablet@2x.png" alt="end product landing mobile">
-</div>
-<div align="center">
-<img src="images/02_SMILESCHOOL_PRICING_desktop@2x.png" alt="end product pricing desktop">
-<img src="images/02_SMILESCHOOL_PRICING_mobile@2x.png" alt="end product pricing tablet">
-<img src="images/02_SMILESCHOOL_PRICING_tablet@2x.png" alt="end product pricing mobile">
-</div>
-<div align="center">
-<img src="images/03_SMILESCHOOL_COURSES_desktop@2x.png" alt="end product courses desktop">
-<img src="images/03_SMILESCHOOL_COURSES_mobile@2x.png" alt="end product courses tablet">
-<img src="images/03_SMILESCHOOL_COURSES_tablet@2x.png" alt="end product courses mobile">
-</div>
+<img src="images/desktop.png" alt="end product landing desktop">
+<img src="images/mobile.png" alt="end product landing tablet">
 
 ## Tools/Frameworks used 📖
 - HTML
