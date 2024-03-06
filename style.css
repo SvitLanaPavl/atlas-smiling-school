@@ -118,7 +118,7 @@
   
   /*Header 
   ==========================================*/
-  header {
+  #header-home {
     z-index: 2;
     height: 30px;
     top: 40px;
@@ -175,7 +175,7 @@
    background: url(images/banner_bgr.png) center/cover no-repeat;
    background-attachment: fixed;
   }
-  #schooling_block {
+  .graycover {
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%);
   }
@@ -355,3 +355,6 @@
 
   /* COURSES
   ==========================*/
+#courses-header {
+  background: url(images/courses-banner.png) center/cover no-repeat;
+}
