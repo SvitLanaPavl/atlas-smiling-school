@@ -358,3 +358,9 @@
 #courses-header {
   background: url(images/courses-banner.png) center/cover no-repeat;
 }
+.courses-banner {
+ /* width: 30%;*/
+font-family: Coiny;
+font-size: var(--font-size-title);
+font-weight: var(--font-weight-light);
+}
