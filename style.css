@@ -73,19 +73,19 @@
     .bg-secondary {
       background-color: #071629 !important;
     }
-.btn-primary {
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    background: var(--color-purple);
-    color: var(--color-white);
-    border: 0;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-lreg);
-    font-size: var(--font-size-text-sm);
-    line-height: var(--line-height-norm);
-    box-shadow: var(--box-shadow-button);
-}
+    .btn-primary {
+      width: 162px;
+      height: 44px;
+      border-radius: 22px;
+      background: var(--color-purple);
+      color: var(--color-white);
+      border: 0;
+      font-family: var(--font-family);
+      font-weight: var(--font-weight-lreg);
+      font-size: var(--font-size-text-sm);
+      line-height: var(--line-height-norm);
+      box-shadow: var(--box-shadow-button);
+  }
 
 /* Base
    ======================= */
@@ -105,8 +105,7 @@
     color: var(--color-white);
     text-decoration: none;
   }
-  a:hover, a:active {
-    color: inherit;
+  .nav-item a:hover, .nav-item a:active {
     color: var(--color-purple);
     cursor: pointer;
   }
@@ -119,7 +118,6 @@
   
   /*Header 
   ==========================================*/
-  
   header {
     z-index: 2;
     height: 30px;
@@ -152,6 +150,9 @@
     font-size: var(--font-size-text-m);
     font-weight: var(--font-weight-light);
   }
+  #logo:hover {
+    color: var(--color-white);
+  }
   .nav-link {
     font-size: var(--font-size-text-xsm);
     font-weight: var(--font-weight-reg);
@@ -182,7 +183,6 @@
   #get-schooled h1 {
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
-    margin-top: 20vh;
   }
   
   #get-schooled p {
