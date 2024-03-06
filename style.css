@@ -129,7 +129,7 @@
   }
   @media (max-width: 767px) {
     #logo {
-      top: 1vh;
+      top: 2vh;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
