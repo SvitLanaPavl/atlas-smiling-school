@@ -368,3 +368,6 @@ font-family: Coiny;
 font-size: var(--font-size-title);
 font-weight: var(--font-weight-light);
 }
+.what-is {
+  margin-top: 16vh;
+}
