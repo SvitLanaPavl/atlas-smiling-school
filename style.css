@@ -296,6 +296,9 @@
 
   /* PRICING
   =======================*/
+  #pricing-header {
+    background: url(images/pricing-header.png) center/cover no-repeat;
+  }
 
 
   /* FAQ 
@@ -323,11 +326,12 @@
   ==========================*/
 #courses-header {
   background: url(images/courses-banner.png) center/cover no-repeat;
+  background-attachment: fixed;
 }
-#courses-header .nav-link:hover {
+.nav-link:hover {
   border-bottom: 2px solid var(--color-white);
 }
-#courses-header .nav-link {
+.nav-link {
   transition: all 0.2s;
 }
 .courses-banner {
