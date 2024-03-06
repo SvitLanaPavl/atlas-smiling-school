@@ -300,44 +300,11 @@
 
   /* FAQ 
   ==============================*/
-  #FAQ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 850px;
-    width: 100%;
-  }
-  #faq-cont {
-    width: 920px;
-    height: 100%;
-    flex-shrink: 0;
-  }
   #FAQ h1 {
-    margin-top: 67px;
     color: var(--color-black);
     text-align: center;
     font-size: 60px;
     font-weight: var(--font-weight-xlight);
-  }
-  .qa_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  .qa {
-    display: flex;
-    justify-content: space-between;
-  }
-  .qa_block {
-    display: flex;
-    width: 350px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0px;
   }
   .qa_block h2 {
     color: var(--color-black);
@@ -349,7 +316,6 @@
     font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-light);
     line-height: 24px; /* 171.429% */
-    width: 350px;
   }
 
 
@@ -357,6 +323,12 @@
   ==========================*/
 #courses-header {
   background: url(images/courses-banner.png) center/cover no-repeat;
+}
+#courses-header .nav-link:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+#courses-header .nav-link {
+  transition: all 0.2s;
 }
 .courses-banner {
  /* width: 30%;*/
