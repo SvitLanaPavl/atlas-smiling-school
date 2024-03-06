@@ -353,7 +353,7 @@ tr:last-child td {
   /* COURSES
   ==========================*/
 #courses-header {
-  background: url(images/courses-banner.png) center/cover no-repeat;
+  background: url(images/courses-banner.png) center/contain no-repeat;
   background-attachment: fixed;
 }
 .nav-link:hover {
@@ -369,5 +369,5 @@ font-size: var(--font-size-title);
 font-weight: var(--font-weight-light);
 }
 .what-is {
-  margin-top: 16vh;
+  margin-top: 15vh;
 }
