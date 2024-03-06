@@ -73,24 +73,19 @@
     .bg-secondary {
       background-color: #071629 !important;
     }
-    .h1 {
-      font-size: 120px !important;
-    }
-    .h2 {
-      font-size: 46px !important;
-    }
-    .h3 {
-      font-size: 32px !important;
-    }
-    .fs-4 {
-
-    }
-    .fs-5 {
-
-    }
-    .fs-1 {
-
-    }
+.btn-primary {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    background: var(--color-purple);
+    color: var(--color-white);
+    border: 0;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-lreg);
+    font-size: var(--font-size-text-sm);
+    line-height: var(--line-height-norm);
+    box-shadow: var(--box-shadow-button);
+}
 
 /* Base
    ======================= */
@@ -114,19 +109,6 @@
     color: inherit;
     color: var(--color-purple);
     cursor: pointer;
-  }
-  button {
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    background: var(--color-purple);
-    color: var(--color-white);
-    border: 0;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-lreg);
-    font-size: var(--font-size-text-sm);
-    line-height: var(--line-height-norm);
-    box-shadow: var(--box-shadow-button);
   }
   button:hover {
     opacity: var(--button-hover-opacity);
