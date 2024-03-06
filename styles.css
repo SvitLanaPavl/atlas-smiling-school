@@ -288,7 +288,7 @@
   
   /* Footer 
   ======================================*/
-  footer p {
+  .small-text {
     font-size: var(--font-size-text-xsm);
     font-weight: var(--font-weight-light);
   }
@@ -312,7 +312,10 @@
     font-size: 60px;
     font-weight: var(--font-weight-reg);
   }
-
+  .price {
+    font-size: 44px;
+    font-weight: var(--font-weight-reg);
+  }
 
   /* FAQ 
   ==============================*/
