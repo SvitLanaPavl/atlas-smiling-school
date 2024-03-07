@@ -1,23 +1,12 @@
 /* GLOBAL */
+/* ---- Variables
+------- Bootstrap Overwrite
+
 /* SUMMARY HOME
-    1. GLOBAL
-    2. HEADER
-    3. MAIN
-    4. FOOTER
-*/
-
-/* SUMMARY PRICING
-    1. GLOBAL
-    2. HEADER
-    3. MAIN
-    4. FOOTER
-*/
-
-/* SUMMARY COURSES
-    1. GLOBAL
-    2. HEADER
-    3. MAIN
-    4. FOOTER
+    1. BASE
+    2. HOME
+    3. PRICING
+    4. COURSES
 */
 
 /*** 1. GLOBAL ***/
@@ -113,11 +102,50 @@
     opacity: var(--button-hover-opacity);
     cursor: pointer;
   }
+  .nav-link {
+    font-size: var(--font-size-text-xsm);
+    font-weight: var(--font-weight-reg);
+    color: var(--color-white);
+  }
+  .nav-link:hover, .nav-link:active, .nav-link:focus {
+    color: var(--color-purple);
+  }
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler, .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="%23FFFFFF" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h15M4 23h22"/%3e%3c/svg%3e');
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+.nav-link {
+  transition: all 0.2s;
+}
+@media (max-width: 767px) {
+  .nav-link:hover {
+    border-bottom: none;
+  }
+.nav-link:hover:after {
+  content: "";
+  border-bottom: 2px solid var(--color-white);
+  width: 15%;
+  display: block;
+  margin: auto;
+  padding-top: 6px;
+}
+}
+.small-text {
+  font-size: var(--font-size-text-xsm);
+  font-weight: var(--font-weight-light);
+}
   /* HOME
-  ==========================*/
+  ==========================
+  ======================================*/
   
-  /*Header 
-  ==========================================*/
+  /*Header */
 
   #logo {
     width: 168px;
@@ -139,24 +167,6 @@
   #logo:hover {
     color: var(--color-white);
   }
-  .nav-link {
-    font-size: var(--font-size-text-xsm);
-    font-weight: var(--font-weight-reg);
-    color: var(--color-white);
-  }
-  .nav-link:hover, .nav-link:active, .nav-link:focus {
-    color: var(--color-purple);
-  }
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler, .navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-  border: 0;
-}
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="%23FFFFFF" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h15M4 23h22"/%3e%3c/svg%3e');
-}
-  /* Main 
-  ==========================================*/
   #main-part {
    background: url(images/banner_bgr.png) center/cover no-repeat;
    background-attachment: fixed;
@@ -165,20 +175,16 @@
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%);
   }
-  
   #get-schooled h1 {
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
   }
-  
   #get-schooled p {
     font-size: var(--font-size-text);
     font-weight: var(--font-weight-reg);
     word-spacing: 50px;
   }
-  
   /* Learn from the pros */
-
   #pros h2 {
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-xlight);
@@ -271,17 +277,10 @@
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-wide);
   }
-  
-  /* Footer 
-  ======================================*/
-  .small-text {
-    font-size: var(--font-size-text-xsm);
-    font-weight: var(--font-weight-light);
-  }
-
 
   /* PRICING
-  =======================*/
+  =======================
+  ===================================*/
   #pricing-header {
     background: url(images/pricing-header.png) center/cover no-repeat;
     background-attachment: fixed;
@@ -332,8 +331,7 @@ tr:last-child td {
   border: none;
 }
 
-  /* FAQ 
-  ==============================*/
+  /* FAQ */
   #FAQ h1 {
     color: var(--color-black);
     text-align: center;
@@ -349,36 +347,20 @@ tr:last-child td {
     color: rgba(7, 22, 41, 0.50);
     font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-light);
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
   }
 
 
   /* COURSES
-  ==========================*/
+  ==========================
+  ======================================*/
 #courses-header {
   background: url(images/courses-banner.png) center/cover no-repeat;
 }
-.nav-link:hover {
-  border-bottom: 2px solid var(--color-white);
-}
-.nav-link {
-  transition: all 0.2s;
-}
-@media (max-width: 767px) {
-  .nav-link:hover {
-    border-bottom: none;
-  }
-.nav-link:hover:after {
-  content: "";
-  border-bottom: 2px solid var(--color-white);
-  width: 15%;
-  display: block;
-  margin: auto;
-  padding-top: 6px;
-}
+.dropdown-toggle::after {
+  display: none;
 }
 .courses-banner {
- /* width: 30%;*/
 font-family: Coiny;
 font-size: var(--font-size-title);
 font-weight: var(--font-weight-light);
