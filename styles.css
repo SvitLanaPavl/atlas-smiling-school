@@ -189,6 +189,7 @@
    background-attachment: fixed;
   }
   .graycover {
+    -webkit-backdrop-filter: grayscale();
     backdrop-filter: grayscale();
     background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00) 0%, #071629 100%);
   }
