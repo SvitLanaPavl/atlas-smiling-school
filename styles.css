@@ -299,6 +299,22 @@
   #pricing-header {
     background: url(images/pricing-header.png) center/cover no-repeat;
   }
+  .graycover-pricing {
+     backdrop-filter: grayscale(100%) brightness(100%);
+  
+    /* Apply background */
+    background: radial-gradient(
+                    ellipse at center top,
+                    rgba(41, 48, 61, 0.1) 0%,
+                    rgba(41, 48, 61, 0.05) 40%,
+                    #071629 50%
+                ),
+                radial-gradient(
+                    ellipse at center bottom,
+                    rgba(41, 48, 61, 0.5) 0%,
+                    #071629 100%
+                );
+  }
   .pricing-banner h2 {
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-light);
@@ -353,7 +369,7 @@ tr:last-child td {
   /* COURSES
   ==========================*/
 #courses-header {
-  background: url(images/courses-banner.png) center/contain no-repeat;
+  background: url(images/courses-banner.png) center/cover no-repeat;
   background-attachment: fixed;
 }
 .nav-link:hover {
