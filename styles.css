@@ -185,7 +185,11 @@
     color: var(--color-white);
   }
   #main-part {
+
    background: url(images/banner_bgr.png) center/cover no-repeat;
+   -webkit-background-size: cover;
+   -webkit-background-attachment: fixed;
+   background-size: cover;
    background-attachment: fixed;
   }
   .graycover {
