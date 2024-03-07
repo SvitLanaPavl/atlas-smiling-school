@@ -357,12 +357,24 @@ tr:last-child td {
 #courses-header {
   background: url(images/courses-banner.png) center/cover no-repeat;
 }
-
 .nav-link:hover {
   border-bottom: 2px solid var(--color-white);
 }
 .nav-link {
   transition: all 0.2s;
+}
+@media (max-width: 767px) {
+  .nav-link:hover {
+    border-bottom: none;
+  }
+.nav-link:hover:after {
+  content: "";
+  border-bottom: 2px solid var(--color-white);
+  width: 15%;
+  display: block;
+  margin: auto;
+  padding-top: 6px;
+}
 }
 .courses-banner {
  /* width: 30%;*/
