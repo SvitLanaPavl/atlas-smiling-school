@@ -25,6 +25,7 @@
     --color-black: #071629;
     --font-family: "Source Sans Pro", sans-serif;
     --font-size-xxlg: 120px;
+    --font-size-xlg: 90px;
     --font-size-lg: 46px;
     --font-size-title: 32px;
     --font-size-text: 16px;
@@ -194,6 +195,12 @@
   #get-schooled h1 {
     font-size: var(--font-size-xxlg);
     font-weight: var(--font-weight-reg);
+  }
+
+  @media (max-width: 750px) {
+    #get-schooled h1 {
+      font-size: var(--font-size-xlg);
+    }
   }
   #get-schooled p {
     font-size: var(--font-size-text);
