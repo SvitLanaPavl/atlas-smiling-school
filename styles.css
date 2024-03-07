@@ -170,7 +170,7 @@
   }
   @media (max-width: 767px) {
     #logo {
-      top: 2vh;
+      top: 1vh;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -186,8 +186,9 @@
   }
   #main-part {
 
-   background: url(images/banner_bgr.png) center/cover no-repeat;
-   -webkit-background-size: cover;
+   background: url(images/banner_bgr.png) center no-repeat;
+   background-size: 100% 100%;
+   /*-webkit-background-size: cover;*/
    -webkit-background-attachment: fixed;
    background-size: cover;
    background-attachment: fixed;
