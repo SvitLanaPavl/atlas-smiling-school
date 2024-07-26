@@ -40,6 +40,6 @@ atlas-headphones/
 
 ## Author/Contact info :phone: :mailbox:
 
-* **Svitlana Pavlovska** **|** [Github](https://github.com/SvitLanaPavl) **|** [LinkedIn](https://www.linkedin.com/in/svitlana-pavlovska-833b43184/) **|** [Email](mailto:lanapavlovska90@gmail.com)
+* **Svitlana Pavlovska** **|** [Github](https://github.com/SvitLanaPavl) **|** [LinkedIn](https://www.linkedin.com/in/svitlana-pavlovska-833b43184/) **|** [Email](mailto:lanapavlovska90@gmail.com) **|** [Portfolio](https://svitlanapavl.github.io/Portfolio/)
 ##
 <img src="images/atlas_school.png" alt="Coding School Atlas" style="width: 100%;">
